@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        /* what is Array ?
+        
+            An array is an object that can store multiple values at once. 
+
+
+            ArrayMethods:-
+
+            sort()	:--  sorts the elements alphabetically in strings and in ascending order
+
+            pop()   :--	removes the last element of an array and returns the removed element
+
+            slice() :--	selects the part of an array and returns the new array
+
+           splice() :-- removes or replaces existing elements and/or adds new elements
+
+           forEach() :-- calls a function for each element
+
+           indexOf() :-- searches an element of an array and returns its position
+
+           shift() :-- removes the first element of an array and returns the removed element
+        */
+
+        //creating an array 
+        let names=['qwerty','sweety','nougty'];
+
+
+        //accessing an Array elements by index number
+        console.log(names[0]);
+
+
+        //iterating the array by using the for  loop
+        
+        for(let x=0 ;x<=names.length-1;x++)
+        {
+            console.log(names[x])
+        }
+
+
+
+        const marks=[67,58,97,88,71,23,47,73];
+
+       console.log(marks.indexOf(67))// it returns the index position for particular element
+       marks.push(34); //adding the new element to the array
+       console.log(marks)
+
+       marks.pop()//it removes the last element from an array 
+
+       console.log(marks)
+
+       let newArray=marks.slice(2,5) //it returns the array with from requred index  to requred index 
+
+       console.log(newArray)
+
+
+       let month=['jan','feb','aprl','jun']
+
+       month.splice(2,0,'march');
+
+       console.log(month);
+
+
+       
+
+    </script>
+
+    
+</body>
+</html>
