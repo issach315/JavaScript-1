@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // JavaScript object method
+
+        let person={
+
+            firstName:'Issach',
+            lastName:'Emani',
+            Age:24,
+
+            great:function(n1,n2)
+            {
+                console.log('hello...'+this.firstName,n1+n2)
+            },
+
+            getFullName:function()
+            {
+                return this.firstName+' '+this.lastName;
+            }
+        };
+
+        // calling the object method 
+        person.great(200,27);
+
+        //object method return type 
+        console.log(person.getFullName());
+        
+
+    </script>
+    
+</body>
+</html>
